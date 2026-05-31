@@ -5,16 +5,37 @@
 
 <style>
 body{
-background:#ffe6f0;
-font-family:Arial;
+background: linear-gradient(135deg,#ff9a9e,#fad0c4,#fad0c4);
+font-family:Arial,sans-serif;
 text-align:center;
 padding:20px;
+color:#333;
+}
+
+h1{
+font-size:50px;
+animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{
+text-shadow:0 0 10px #ff4da6;
+}
+to{
+text-shadow:0 0 25px #ff0066;
+}
 }
 
 img{
 width:250px;
 margin:10px;
-border-radius:15px;
+border-radius:20px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+img:hover{
+transform:scale(1.05);
 }
 
 button{
@@ -23,6 +44,8 @@ font-size:18px;
 border:none;
 border-radius:10px;
 cursor:pointer;
+background:#ff4da6;
+color:white;
 }
 </style>
 
