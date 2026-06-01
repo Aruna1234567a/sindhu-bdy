@@ -71,6 +71,11 @@ transform:translateY(110vh);
 <audio id="bgmusic" autoplay loop controls>
   <source src="https://raw.githubusercontent.com/Aruna1234567a/sindhu-bdy/main/WhatsApp%20Audio%202026-06-01%20at%207.09.52%20AM.mpeg" type="audio/mpeg">
 </audio>
+   <script>
+document.addEventListener("click", function () {
+  document.getElementById("bgmusic").play();
+});
+</script>
 <script>
 window.onload = function() {
   const music = document.getElementById("bgmusic");
