@@ -68,7 +68,17 @@ transform:translateY(110vh);
 </head>
 
 <body>
-<div class="heart" style="left:10%;">❤️</div>
+<audio id="bgmusic" autoplay loop controls>
+  <source src="WhatsApp Audio 2026-06-01 at 7.09.52 AM.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+window.onload = function() {
+  const music = document.getElementById("bgmusic");
+  music.currentTime = 2;
+};
+</script>
+   <div class="heart" style="left:10%;">❤️</div>
 <div class="heart" style="left:30%;animation-delay:2s;">💖</div>
 <div class="heart" style="left:50%;animation-delay:4s;">❤️</div>
 <div class="heart" style="left:70%;animation-delay:1s;">💖</div>
@@ -142,10 +152,6 @@ document.getElementById("popup").style.display="none";
 </script>
 
 <br><br>
-
-<a href="https://www.youtube.com/results?search_query=thangapoove+song" target="_blank">
-🎵 Play Thangapoove Song
-</a>
 
 </body>
 </html>
